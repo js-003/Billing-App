@@ -1,0 +1,15 @@
+
+
+<div class="parent">
+  <div class="container" [ngClass]="show ? 'active' :'' " id="container">
+      <div class="form-container sign-in" >
+          <form>
+              <h1>Sign In</h1>
+              <input type="email" name="email" [(ngModel)]="loginobj.email" placeholder="Email">
+              <input type="password" name="password"   [(ngModel)]="loginobj.password" placeholder="Password">
+              <a href="#">→ Forget Your Password? ←</a>
+              <button (click)="login()">Sign In</button>
+          </form>
+      </div>
+  </div>
+</div>
